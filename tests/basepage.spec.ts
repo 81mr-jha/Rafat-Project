@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('test', async ({ page }) => {
     await page.goto('https://www.blue-style.cz/');
 
-    // await page.pause();
+    await page.pause();
     // await page.waitForTimeout(2000);
     await page.locator('[id="wrapper\\.depCity"] div').nth(1).click();
     await page.waitForTimeout(1500);
